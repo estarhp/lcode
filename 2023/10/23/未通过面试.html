@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>蓝山工作室</title>
+</head>
+<body style="text-align: left; padding: 0 0 10px 0; margin: 0">
+<div
+        style="
+        max-width: 330px;
+        border: solid 1px #dcdcdc;
+        margin: 0 auto;
+        padding: 0 20px;
+      "
+>
+    <div
+            style="
+          font-weight: 700;
+          border-bottom: solid #c0c0c0 5px;
+          background-color: #4f4f4f;
+          height: 50px;
+          margin: 0 -20px;
+          margin-bottom: -40px;
+        "
+    >
+        <div
+                style="
+            font-size: 14px;
+            color: white;
+            line-height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+            不止步于<span style="color: #4d6fb2">「南山」</span
+        >,让世界看到你的可能性
+        </div>
+    </div>
+    <div
+            style="
+          width: 100%;
+          height: 330px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+    >
+        <img
+                width="100%"
+                height="auto"
+                src="https://cdnjson.com/images/2023/10/16/logo2.png"
+        />
+    </div>
+    <div
+            style="
+          margin-top: -40px;
+          background-color: white;
+          padding: 15px;
+          border: solid 1px #c0c0c0;
+          border-radius: 5px;
+          box-shadow: 5px 5px 0px 2px #dcdcdc;
+          color: #24292e;
+          font-size: 14px;
+          margin-bottom: 10px;
+          animation: enter 2s linear;
+        "
+    >
+        <p
+                class="blue"
+                style="font-size: 22px; font-weight: 700; color: #4682b4; margin: 0"
+        >
+            「蓝山工作室面试结果通知」
+        </p>
+        <div
+                class="title"
+                style="
+            line-height: 35px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #4f4f4f;
+            border-bottom: 1px solid #9c9c9c;
+            display: flex;
+            justify-content: center;
+          "
+        >
+        </div>
+        <div>
+            <p style="text-indent: 2em">
+                亲爱的
+                <span style="font-weight: 700;font-size: 14px;padding: 0 1px;">{{ .Subscriber.Name }}</span>
+                同学
+            </p>
+            <p style="text-indent: 2em;margin-top: 0">
+                非常感谢你参加了蓝山工作室的招新面试。经过工作室的认真评估和综合考虑，很抱歉地告诉你，你参加的面试未通过。
+            </p >
+            <p style="text-indent: 2em;margin-top: 0">
+                尽管你未能成功加入我们的团队，但这并不代表你的能力和潜力不足。我们鼓励你继续努力提升自己，在未来的学习和发展中寻找更好的机会。
+            </p>
+            <p style="text-indent: 2em;margin-top: 0">
+                我们真诚地感谢你对蓝山工作室的关注和支持，希望你能保持积极的态度，继续追寻自己的梦想。如果你对面试结果有任何疑问或需要进一步的反馈，请随时与我们联系，我们将尽力为你提供帮助。
+            </p>
+            <p style="text-indent: 2em">
+                再次感谢你的参与，衷心祝愿你在未来的道路上取得更大的成功！
+            </p>
+            <p style="font-weight: 700;text-indent: 2em;text-align: right;padding-right: 10px">
+                蓝山工作室
+            </p>
+        </div>
+        <div style="padding: 10px">
+            <img src="https://minio.cqupt.edu.cn/img/20231024-131747.jpg" alt="学员群二维码" style="height: auto;width: 100%">
+        </div>
+    </div>
+</div>
+<div>
+    <p
+            class="footer"
+            style="
+            text-align: center;
+            margin: 1px 0 0 0;
+            font-size: 14px;
+            color: #696969;
+          "
+    >
+        该邮件被发送到 {{ .Subscriber.Email }}
+    </p>
+    <p
+            class="footer"
+            style="
+            font-family: center, serif;
+            text-align: center;
+            margin: 1px 0 0 0;
+            font-size: 14px;
+            color: #696969;
+          "
+    >
+        由 {{ .Subscriber.Name }} 接收
+    </p>
+</div>
+<div
+        style="
+          background-color: #4f4f4f;
+          height: 100px;
+          margin: 0 -20px;
+          margin-top: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+>
+    <p
+            class="footer"
+            style="text-align: center; font-size: 12px; color: white"
+    >
+        Copyright ? {{ Date "2006" }} 蓝山工作室. All rights reserved
+    </p>
+</div>
+</body>
+</html>
