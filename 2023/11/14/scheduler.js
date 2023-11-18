@@ -1,10 +1,14 @@
 class Scheduler {
     tasks = []
     currentTasks = []
-    limitNumber = 2
+    limitNumber = undefined
     addTaskLooper = false
     deleteTaskLooper = false
     
+    constructor(limitNumber) {
+        this.limitNumber = limitNumber
+    }
+
     addTaskLoop(){
             this.addTaskLooper = true
             setTimeout(() => {
@@ -55,7 +59,7 @@ class Scheduler {
     }
 }
 
-const schduler = new Scheduler()
+const schduler = new Scheduler(2)
 
 const TimeOut = (time) => {
     return new Promise(r => setTimeout(r,time))
@@ -69,5 +73,6 @@ addTask(1000,1)
 addTask(500,2)
 addTask(300,3)
 addTask(400,4)
+
 
 
