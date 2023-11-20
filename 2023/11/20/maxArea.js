@@ -54,7 +54,17 @@ const maxArea = function(height) {
         let currentMax = 0
         const leftHeight = height[left]
         const rightHeight = height[right]
-        if (leftHeight < rightHeight) {
+        const  currentLeft = leftHeight
+        const currentRight  = rightHeight
+        if (currentLeft > leftHeight) {
+            left ++
+            continue
+        }
+        if (currentRight > rightHeight) {
+            right --
+            continue
+        }
+        if (leftHeight < rightHeight ) {
             currentMax = (right - left) * leftHeight
             left ++
         }else {
