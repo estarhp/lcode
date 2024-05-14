@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "Node16",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true
+    },
+    "include": [
+        "2024/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+    ]
+}
