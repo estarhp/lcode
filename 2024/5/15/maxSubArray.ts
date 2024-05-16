@@ -3,24 +3,17 @@
  * @return {number}
  */
 const maxSubArray = function(nums: number[]): number {
-    const maxSum = Number.MIN_VALUE;
-     //先来个前缀和
-    const frontSum = [0]
-    for (let index = 0; index < nums.length; index++) {
-       frontSum[index + 1] = frontSum[index] + nums[index]
+    let ans = -Infinity;
+    let minPreSum = 0;
+    let preSum = 0;
+    for (const x of nums) {
+        preSum += x; // 当前的前缀和
+        ans = Math.max(ans, preSum - minPreSum); // 减去前缀和的最小值
+        minPreSum = Math.min(minPreSum, preSum); // 维护前缀和的最小值
     }
-    let minIndex = 0
-    let maxIndex = 0
+    return ans;
+};
 
-    while (maxIndex < frontSum.length) {
-        const R = frontSum[maxIndex]
-        const L = frontSum[minIndex]
-    }
-
-
-    return frontSum[maxIndex] - frontSum[minIndex]
-
-}
 
 const nums = [-1]
 console.log(maxSubArray(nums))
