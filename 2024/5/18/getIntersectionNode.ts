@@ -5,10 +5,7 @@
  *     this.next = null;
  * }
  */
-type ListNode = {
-    val: any,
-    next: ListNode | null
-}
+import {ListNode} from "../global";
 /**
  * @param {ListNode} headA
  * @param {ListNode} headB

@@ -5,22 +5,19 @@
  *     this.next = null;
  * }
  */
-
 import {ListNode} from "../global";
-
 /**
  * @param {ListNode} head
- * @return {boolean}
+ * @return {ListNode}
  */
-const hasCycle = function(head: ListNode): boolean {
+const detectCycle = function(head: ListNode): ListNode {
     const nodeMap = new Map()
     for (let currentNode = head; currentNode !== null ; currentNode = currentNode.next) {
         if (nodeMap.has(currentNode)) {
-            return true
+            return currentNode
         }else {
             nodeMap.set(currentNode,currentNode.val)
         }
     }
-    return false
+    return null
 };
-
