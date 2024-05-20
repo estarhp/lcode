@@ -8,3 +8,10 @@ export type Node = {
     random: Node,
     next: Node,
 }
+
+export type BothWayNode = {
+    val: any,
+    key: any
+    next: BothWayNode,
+    pre: BothWayNode
+}
