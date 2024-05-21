@@ -3,7 +3,6 @@ import {BothWayNode} from "../global";
 /**
  * @param {number} capacity
  */
-
 interface LRUCache {
     capacity: number,
     head: BothWayNode,
@@ -26,10 +25,6 @@ const LRUCache = function (this: LRUCache, capacity: number) {
     this.length = 0
     this.map = new Map()
 };
-
-
-
-
 /**
  * @param {number} key
  * @return {number}
@@ -85,23 +80,9 @@ LRUCache.prototype.put = function (key: number, value: number): void {
     this.length++
 };
 
-
-
-
 /**
  * Your LRUCache object will be instantiated and called as such:
  * var obj = new LRUCache(capacity)
  * var param_1 = obj.get(key)
  * obj.put(key,value)
  */
-
-const  cache = new (LRUCache as any)(2)
-cache.put(1, 0);
-cache.put(2, 2);
-console.log(cache.get(1)); // 输出 1
-cache.put(2, 1);
-console.log(cache.get(2)); // 输出 -1
-cache.put(4, 4);
-console.log(cache.get(2)); // 输出 -1，因为 1 已经被移除
-console.log(cache.get(3)); // 输出 3
-console.log(cache.get(4)); // 输出 4

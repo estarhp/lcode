@@ -57,14 +57,4 @@ LRUCache.prototype.put = function (key, value) {
     this.map.set(key, node);
     this.length++;
 };
-const cache = new LRUCache(2);
-cache.put(1, 0);
-cache.put(2, 2);
-console.log(cache.get(1));
-cache.put(2, 1);
-console.log(cache.get(2));
-cache.put(4, 4);
-console.log(cache.get(2));
-console.log(cache.get(3));
-console.log(cache.get(4));
 //# sourceMappingURL=LRUCache.js.map

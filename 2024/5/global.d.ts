@@ -15,3 +15,9 @@ export type BothWayNode = {
     next: BothWayNode,
     pre: BothWayNode
 }
+
+export type TreeNode = {
+    val: number,
+    left: TreeNode,
+    right: TreeNode
+}
